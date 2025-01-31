@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Equipos Válidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Equipos Válidos</h1>
+        
+        <!-- Filtro por elemento -->
+        <div class="filtro-elemento">
+            <label for="filtro-elemento">Filtrar por elemento:</label>
+            <select id="filtro-elemento">
+                <option value="todos">Todos</option>
+                <option value="Pyro">Pyro</option>
+                <option value="Hydro">Hydro</option>
+                <option value="Anemo">Anemo</option>
+                <option value="Electro">Electro</option>
+                <option value="Dendro">Dendro</option>
+                <option value="Cryo">Cryo</option>
+                <option value="Geo">Geo</option>
+            </select>
+        </div>
+
+        <!-- Selección de Personajes -->
+        <div class="seleccion-personajes">
+            <h2>Selecciona tus personajes:</h2>
+            <div id="lista-personajes">
+                <!-- Los personajes se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+
+        <!-- Botón para generar equipos -->
+        <button id="generar-equipos">Generar Equipos Válidos</button>
+
+        <!-- Resultados -->
+        <div class="resultados">
+            <h2>Mejores Equipos:</h2>
+            <ul id="mejores-equipos">
+                <!-- Los mejores equipos se mostrarán aquí -->
+            </ul>
+
+            <h2>Otros Equipos:</h2>
+            <ul id="otros-equipos">
+                <!-- Otros equipos se mostrarán aquí -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

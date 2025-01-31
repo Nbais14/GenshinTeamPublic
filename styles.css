@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A1A2E;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el menú desplegable */
+.filtro-elemento select {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+}
+
+/* Estilos para las opciones del menú desplegable */
+.filtro-elemento select option {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
+}
+
+/* Estilos para la lista de personajes */
+#lista-personajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.personaje {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.personaje:hover {
+    opacity: 0.8;
+}
+
+.personaje input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.personaje label {
+    cursor: pointer;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para los resultados */
+.resultados {
+    margin-top: 20px;
+}
+
+#mejores-equipos,
+#otros-equipos {
+    list-style-type: none;
+    padding: 0;
+}
+
+#mejores-equipos li,
+#otros-equipos li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: white;
+}
